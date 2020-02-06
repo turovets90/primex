@@ -131,6 +131,15 @@ $(document).ready(function(){
         ]
     });
 
+
+
+    $('.file').filestyle({
+        text : 'Прикрепить файл\n' +
+            '(word, exel,pdf, jpg,png)',
+        dragdrop: false,
+    });
+
+
     /*
         $(document).ready(function(){
             $('.file').filestyle({
