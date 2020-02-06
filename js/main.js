@@ -140,6 +140,35 @@ $(document).ready(function(){
     });
 
 
+    let gallery_project__vertical= $('.gallery-project__vertical');
+    let gallery_project__horizontal=$('.gallery-project__horizontal');
+    $(gallery_project__vertical).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots:false,
+        vertical: true,
+        verticalSwiping:true,
+    });
+    $(gallery_project__horizontal).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots:false,
+    });
+
+
+    $('.prev-project').click(function(){
+        $(gallery_project__vertical).slick('slickPrev');
+    });
+
+    $('.next-project').click(function(){
+        $(gallery_project__vertical).slick('slickNext');
+    });
+
+
+
+
     /*
         $(document).ready(function(){
             $('.file').filestyle({
