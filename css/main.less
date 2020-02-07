@@ -183,8 +183,13 @@ header{
 
 .logo__img{
   @media (max-width:375px){
-    max-width: initial;
     margin-top: -3px;
+    @media (min-width:351px){
+      max-width: initial;
+    }
+    @media (max-width:350px){
+      max-width: 162px;
+    }
   }
 }
 
@@ -1112,13 +1117,13 @@ h2, .h2{
 
 .bg-green{
   background: @green_color;
-  &:hover, &:focus{
+  &:hover{
     opacity: 0.5;
   }
 }
 .bg-yellow{
   background: @yellow_color;
-  &:hover, &:focus{
+  &:hover{
     background: #CF9608;
   }
 }
