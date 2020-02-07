@@ -145,10 +145,13 @@ $(document).ready(function(){
     $(gallery_project__vertical).slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots:false,
         vertical: true,
         verticalSwiping:true,
+        infinite: false,
+        prevArrow:"<button type='button' class='slick_prev'><i></i><span>Предыдущий проект</span></button>",
+        nextArrow:"<button type='button' class='slick_next '><i ></i><span>Следующий проект</span></button>",
     });
     $(gallery_project__horizontal).slick({
         slidesToShow: 1,
