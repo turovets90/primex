@@ -91,45 +91,16 @@ $(document).ready(function(){
 
     let about_slider=$('.about-product__slider');
 
-    let about_slider_nav=$('.about-product__slider_nav');
     $(about_slider).slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         dots:false,
-        asNavFor: about_slider_nav,
+       // asNavFor: about_slider_nav,
     });
 
 
-    $(about_slider_nav).slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        asNavFor: about_slider,
-        dots: false,
-        arrows: false,
-        //centerMode: true,
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 5,
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 3,
-                }
-            }
-        ]
-    });
+
 
 
 
