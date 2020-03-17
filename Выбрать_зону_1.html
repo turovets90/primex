@@ -40,80 +40,29 @@
         <h1 class="page__title">Выбрать зону 1</h1>
       </div>
     </div>
-    <div class="page__img" style="background-image:url(img/image8.png)"></div>
-    <div class="container">
-      <div class="page_content">
-        <p>Индивидуальный проект - проект, где изделие:</p>
-        <ul>
-          <li>- имеет сложную форму, конфигурацию (не квадрат и не прямоугольник, есть вырезы), или</li>
-          <li>- в соответствии с брендбуком компании имеет сложный рисунок (логотип, надпись, фирменные цвета), или</li>
-          <li>- заказчик имеет свое собственное видение дизайна, рисунка, формы ковра, которое он не может создать в онлайн калькуляторе сам, или</li>
-          <li>- габариты изделия больше 3*4 метра, на которые расчитан быстрый заказ в калькуляторе через сайт, или</li>
-          <li>- у заказчика есть готовые чертежи изделия, которые он просто хочет отправить фирме-изготовителю.</li>
+    <div class="container choose-zone">
+      <div class="choose-zone__container">
+        <ul class="choose-zone__list">
+          <li>
+            <div class="item"><img class="img" src="img/choose_zone/img_left.png"/><img class="img2" src="img/choose_zone/img_left2.png"/>
+              <button class="choose_btn"></button>
+            </div>
+          </li>
+          <li>
+            <div class="item"><img class="img" src="img/choose_zone/img_center.png"/><img class="img2" src="img/choose_zone/img_center2.png"/>
+              <button class="choose_btn"></button>
+            </div>
+          </li>
+          <li>
+            <div class="item"><img class="img" src="img/choose_zone/img_right.png"/><img class="img2" src="img/choose_zone/img_right2.png"/>
+              <button class="choose_btn"></button>
+            </div>
+          </li>
         </ul>
-      </div>
-      <div class="project-form">
-        <form>
-          <div class="row">
-            <div class="col-12 field">
-              <label>Ваше имя</label>
-              <input class="form-control" type="text" placeholder="Иван"/>
-            </div>
-            <div class="col-12 field">
-              <label>Контактные данные для связи</label>
-              <input class="form-control" type="text" placeholder="+7(____)___ - __ - __"/>
-            </div>
-            <div class="col-12 field mb-0">
-              <label>Удобный способ связи:</label>
-              <div class="row radio-group">
-                <div class="col-3">
-                  <div class="radio-group__item">
-                    <input type="radio" name="messenger" id="messenger1"/>
-                    <label for="messenger1"><img src="img/phone.svg"/></label>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="radio-group__item">
-                    <input type="radio" name="messenger" id="messenger2"/>
-                    <label for="messenger2"><img src="img/viber.svg"/></label>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="radio-group__item">
-                    <input type="radio" name="messenger" id="messenger3"/>
-                    <label for="messenger3"><img src="img/watsapp.svg"/></label>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="radio-group__item">
-                    <input type="radio" name="messenger" id="messenger4"/>
-                    <label for="messenger4"><img src="img/telegram.svg"/></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 field">
-              <label>E-mail</label>
-              <input class="form-control" type="text" placeholder="example@mail.com"/>
-            </div>
-            <div class="col-12 field mb-2">
-              <label>Текст сообщения</label>
-              <textarea class="form-control" placeholder="Ваше сообщение"></textarea>
-            </div>
-            <div class="col-12 field mb-0">
-              <input class="file" type="file"/>
-            </div>
-            <div class="col-12 field">Здесь будет капча</div>
-            <div class="col-12 field">
-              <button class="btn-default">Отправить заявку</button>
-            </div>
-          </div>
-        </form>
       </div>
     </div>
     <ul class="fixed__btn_group">
-      <li><a class="phone bg-green" href="tel:+000000000"><img src="img/phone.png"/><span>Позвонить</span></a></li>
-      <li><a class="order bg-yellow" href="#"><span>Индивидуальный<br> заказ</span></a></li>
+      <li class="w-100"><a class="bg-green" href="#"><span>Купить</span></a></li>
     </ul>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
