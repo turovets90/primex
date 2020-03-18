@@ -149,12 +149,29 @@ $(document).ready(function(){
     $('.size-selection__list').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots:false,
         centerMode: true,
-        focusOnSelect: true
-        // asNavFor: about_slider_nav,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+        ]
     });
+
+
+    $('.size_prev').click(function(){
+        $('.size-selection__list').slick('slickPrev');
+    });
+
+    $('.size_next').click(function(){
+        $('.size-selection__list').slick('slickNext');
+    });
+
 
 
 
