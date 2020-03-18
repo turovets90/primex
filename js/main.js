@@ -173,6 +173,33 @@ $(document).ready(function(){
     });
 
 
+    $('.right-vertical__list').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots:false,
+        vertical:true,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+        ]
+    });
+
+
+    $('.right_prev').click(function(){
+        $('.right-vertical__list').slick('slickPrev');
+    });
+
+    $('.right_next').click(function(){
+        $('.right-vertical__list').slick('slickNext');
+    });
+
 
 
 
