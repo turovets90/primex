@@ -146,6 +146,18 @@ $(document).ready(function(){
     });
 
 
+    $('.size-selection__list').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots:false,
+        centerMode: true,
+        focusOnSelect: true
+        // asNavFor: about_slider_nav,
+    });
+
+
+
 
 });
 
