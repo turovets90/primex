@@ -180,15 +180,7 @@ $(document).ready(function(){
         dots:false,
         vertical:true,
         centerMode: true,
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 360,
-                settings: {
-                    slidesToShow: 3,
-                }
-            }
-        ]
+        focusOnSelect: true
     });
 
 
