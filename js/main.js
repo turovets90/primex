@@ -1,6 +1,30 @@
 $(document).ready(function(){
 
 
+    $('.main-menu .arrow').click(function(){
+        $(this).parent().toggleClass('show');
+        $(this).next().slideToggle();
+    });
+
+    $('.mm-btn').click(function () {
+        $('.header-menu-block').toggleClass('open');
+        $('html').toggleClass('page-noscroll');
+
+        $('.mm-close').click(function () {
+            $('.header-menu-block').removeClass('open');
+            $('html').removeClass('page-noscroll');
+        });
+        return false;
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".main-menu").length) {
+            $(".header-menu-block.open").removeClass('open');
+            $("html").removeClass('page-noscroll');
+        }
+        e.stopPropagation();
+    });
+
     if($('.history-list__slider > div').length >2){
         $('.history-list__slider').slick({
             slidesToShow: 2,
